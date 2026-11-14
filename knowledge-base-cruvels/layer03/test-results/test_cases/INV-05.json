@@ -1,0 +1,24 @@
+{
+  "input": {
+    "testId": "INV-05",
+    "category": "INVALID_SECTION",
+    "query": "Section 44444 of the Arbitration and Conciliation Act, 1996",
+    "expected": {
+      "expectMatch": false,
+      "expectedConfidence": "NO_RELEVANT_EVIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "Section 44444 of the Arbitration and Conciliation Act, 1996",
+    "items": [],
+    "totalScanned": 0,
+    "retrievedCount": 0,
+    "confidenceState": "NO_RELEVANT_EVIDENCE",
+    "latencyMs": 2.95
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 2.97,
+    "failureReason": null
+  }
+}

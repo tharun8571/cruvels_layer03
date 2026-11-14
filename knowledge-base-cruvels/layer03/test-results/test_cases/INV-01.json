@@ -1,0 +1,24 @@
+{
+  "input": {
+    "testId": "INV-01",
+    "category": "INVALID_SECTION",
+    "query": "Section 99999 of the Indian Contract Act, 1872",
+    "expected": {
+      "expectMatch": false,
+      "expectedConfidence": "NO_RELEVANT_EVIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "Section 99999 of the Indian Contract Act, 1872",
+    "items": [],
+    "totalScanned": 0,
+    "retrievedCount": 0,
+    "confidenceState": "NO_RELEVANT_EVIDENCE",
+    "latencyMs": 2.93
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 2.97,
+    "failureReason": null
+  }
+}

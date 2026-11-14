@@ -1,0 +1,69 @@
+{
+  "input": {
+    "testId": "DIR-05",
+    "category": "DIRECT",
+    "query": "Section 106 Transfer of Property Act, 1882",
+    "expected": {
+      "expectMatch": true,
+      "expectedSection": "106",
+      "expectedActKeywords": [
+        "Transfer",
+        "Property"
+      ],
+      "expectedConfidence": "HIGH_CONFIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "Section 106 Transfer of Property Act, 1882",
+    "items": [
+      {
+        "chunkId": "chunk_prov_enr_inst_be4_106",
+        "documentId": "prov_enr_inst_be4_106",
+        "sourceId": "src_cruvels_statutes",
+        "documentTitle": "The Transfer of Property Act, 1882 (1882)",
+        "title": "Duration of certain leases in absence of written contract or local usage",
+        "section": "106",
+        "citation": "The Transfer of Property Act, 1882, Section 106",
+        "structuralUnit": "SECTION",
+        "page": 1,
+        "content": "(1) In the absence of a contract or local law or usage to the contrary, a lease of immoveable property for agricultural or manufacturing purposes shall be deemed to be a lease from year to year, terminable, on the part of either lessor or lessee, by six months' notice; and a lease of immoveable property for any other purpose shall be deemed to be a lease from month to month, terminable, on the part of either lessor or lessee, by fifteen days' notice.\n(2) Notwithstanding anything contained in any other law for the time being in force, the period mentioned in sub-section (1) shall commence from the date of receipt of notice.",
+        "score": 1,
+        "authorityLevel": "OFFICIAL_PRIMARY",
+        "authorityWeight": 2,
+        "retrievalMethod": "EXACT_STRUCTURAL_INDEX",
+        "textHash": "e5cb5a37303b4a4955dda8f29ef7147984fd09d1e36c3e5bbbd4a415f5827402",
+        "isOperativeClause": true,
+        "inForce": true,
+        "metadata": {
+          "actTitle": "The Transfer of Property Act, 1882",
+          "actNumber": null,
+          "chapter": "CHAPTER V - OF LEASES OF IMMOVEABLE PROPERTY",
+          "jurisdiction": "central",
+          "isOverruled": false,
+          "goodLaw": true,
+          "isOperativeClause": true,
+          "sourceUrl": null,
+          "sourceChunkId": "inst_be4560fccb0f02be_106",
+          "canonicalHash": "e5cb5a37303b4a4955dda8f29ef7147984fd09d1e36c3e5bbbd4a415f5827402",
+          "contentHash": "e5cb5a37303b4a4955dda8f29ef7147984fd09d1e36c3e5bbbd4a415f5827402",
+          "sourceMetadata": {
+            "sourceUrl": null,
+            "canonicalSource": null,
+            "chunkId": "inst_be4560fccb0f02be_106",
+            "canonicalHash": "e5cb5a37303b4a4955dda8f29ef7147984fd09d1e36c3e5bbbd4a415f5827402",
+            "contentHash": "e5cb5a37303b4a4955dda8f29ef7147984fd09d1e36c3e5bbbd4a415f5827402"
+          }
+        }
+      }
+    ],
+    "totalScanned": 1,
+    "retrievedCount": 1,
+    "confidenceState": "HIGH_CONFIDENCE",
+    "latencyMs": 3.96
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 3.98,
+    "failureReason": null
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
+    "strict": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@prisma/client": ["./src/contracts/prisma-enums.ts"],
+      "@contracts/*": ["./src/contracts/*"],
+      "@retrieval/*": ["./src/retrieval/*"],
+      "@context/*": ["./src/context/*"],
+      "@repository/*": ["./src/repository/*"]
+    }
+  },
+  "include": ["src/**/*", "tests/**/*"]
+}

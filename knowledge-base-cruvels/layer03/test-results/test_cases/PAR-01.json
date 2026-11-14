@@ -1,0 +1,68 @@
+{
+  "input": {
+    "testId": "PAR-01",
+    "category": "PARAPHRASED",
+    "query": "negative covenant preventing an ex-employee from practicing their lawful profession or business",
+    "expected": {
+      "expectMatch": true,
+      "expectedSection": "27",
+      "expectedActKeywords": [
+        "Contract"
+      ],
+      "expectedConfidence": "HIGH_CONFIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "negative covenant preventing an ex-employee from practicing their lawful profession or business",
+    "items": [
+      {
+        "chunkId": "chunk_prov_enr_inst_739_27",
+        "documentId": "prov_enr_inst_739_27",
+        "sourceId": "src_cruvels_statutes",
+        "documentTitle": "The Indian Contract Act, 1872 (1872)",
+        "title": "Agreement in restraint of trade, void",
+        "section": "27",
+        "citation": "The Indian Contract Act, 1872, Section 27",
+        "structuralUnit": "SECTION",
+        "page": 1,
+        "content": "Every agreement by which any one is restrained from exercising a lawful profession, trade or business of any kind, is to that extent void.\n\nException 1.-Saving of agreement not to carry on business of which goodwill is sold.-One who sells the goodwill of a business may agree with the buyer to refrain from carrying on a similar business, within specified local limits, so long as the buyer, or any person deriving title to the goodwill from him, carries on a like business therein, provided that such limits appear to the Court reasonable, regard being had to the nature of the business.",
+        "score": 1,
+        "authorityLevel": "OFFICIAL_PRIMARY",
+        "authorityWeight": 2,
+        "retrievalMethod": "EXACT_STRUCTURAL_INDEX",
+        "textHash": "788c8b9fca07e545c95947ce14f462f9aa1f32af74028c2f01d6a37e40aa9478",
+        "isOperativeClause": true,
+        "inForce": true,
+        "metadata": {
+          "actTitle": "The Indian Contract Act, 1872",
+          "actNumber": null,
+          "chapter": "CHAPTER II - OF CONTRACTS, VOIDABLE CONTRACTS AND VOID AGREEMENTS",
+          "jurisdiction": "central",
+          "isOverruled": false,
+          "goodLaw": true,
+          "isOperativeClause": true,
+          "sourceUrl": null,
+          "sourceChunkId": "inst_739d795793267003_27",
+          "canonicalHash": "788c8b9fca07e545c95947ce14f462f9aa1f32af74028c2f01d6a37e40aa9478",
+          "contentHash": "788c8b9fca07e545c95947ce14f462f9aa1f32af74028c2f01d6a37e40aa9478",
+          "sourceMetadata": {
+            "sourceUrl": null,
+            "canonicalSource": null,
+            "chunkId": "inst_739d795793267003_27",
+            "canonicalHash": "788c8b9fca07e545c95947ce14f462f9aa1f32af74028c2f01d6a37e40aa9478",
+            "contentHash": "788c8b9fca07e545c95947ce14f462f9aa1f32af74028c2f01d6a37e40aa9478"
+          }
+        }
+      }
+    ],
+    "totalScanned": 1,
+    "retrievedCount": 1,
+    "confidenceState": "HIGH_CONFIDENCE",
+    "latencyMs": 3.22
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 3.26,
+    "failureReason": null
+  }
+}

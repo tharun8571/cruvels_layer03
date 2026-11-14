@@ -1,0 +1,69 @@
+{
+  "input": {
+    "testId": "SCN-02",
+    "category": "SCENARIO",
+    "query": "A wholesale supplier delivered goods against a post-dated cheque. The bank returned the cheque dishonoured with a memo stating 'insufficient funds'. The supplier issued a formal statutory notice demanding payment within 15 days, which was received but ignored. Identify the primary statutory penal provision.",
+    "expected": {
+      "expectMatch": true,
+      "expectedSection": "138",
+      "expectedActKeywords": [
+        "Negotiable",
+        "Instruments"
+      ],
+      "expectedConfidence": "HIGH_CONFIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "A wholesale supplier delivered goods against a post-dated cheque. The bank returned the cheque dishonoured with a memo stating 'insufficient funds'. The supplier issued a formal statutory notice demanding payment within 15 days, which was received but ignored. Identify the primary statutory penal provision.",
+    "items": [
+      {
+        "chunkId": "chunk_prov_inst_02753c75_138",
+        "documentId": "prov_inst_02753c75_138",
+        "sourceId": "src_cruvels_statutes",
+        "documentTitle": "The Negotiable Instruments Act, 1881 (1881)",
+        "title": "Dishonour of cheque for insufficiency, etc., of funds in the account",
+        "section": "138",
+        "citation": "The Negotiable Instruments Act, 1881, Section 138",
+        "structuralUnit": "SECTION",
+        "page": 1,
+        "content": "Where any cheque drawn by a person on an account maintained by him with a banker for payment of any amount of money to another person from out of that account for the discharge, in whole or in part, of any debt or other liability, is returned by the bank unpaid, either because of the amount of money standing to the credit of that account is insufficient to honour the cheque, such person shall be deemed to have committed an offence and shall be punished with imprisonment for a term which may be extended to two years, or with fine which may extend to twice the amount of the cheque, or with both.",
+        "score": 1,
+        "authorityLevel": "OFFICIAL_PRIMARY",
+        "authorityWeight": 2,
+        "retrievalMethod": "EXACT_STRUCTURAL_INDEX",
+        "textHash": "857ba110a9f12d8da6a08ac1171930dd7158571efb21b3a7e76065a412d7bc66",
+        "isOperativeClause": true,
+        "inForce": true,
+        "metadata": {
+          "actTitle": "The Negotiable Instruments Act, 1881",
+          "actNumber": null,
+          "chapter": null,
+          "jurisdiction": "central",
+          "isOverruled": false,
+          "goodLaw": true,
+          "isOperativeClause": true,
+          "sourceUrl": null,
+          "sourceChunkId": null,
+          "canonicalHash": "857ba110a9f12d8da6a08ac1171930dd7158571efb21b3a7e76065a412d7bc66",
+          "contentHash": "857ba110a9f12d8da6a08ac1171930dd7158571efb21b3a7e76065a412d7bc66",
+          "sourceMetadata": {
+            "sourceUrl": null,
+            "canonicalSource": null,
+            "chunkId": null,
+            "canonicalHash": "857ba110a9f12d8da6a08ac1171930dd7158571efb21b3a7e76065a412d7bc66",
+            "contentHash": "857ba110a9f12d8da6a08ac1171930dd7158571efb21b3a7e76065a412d7bc66"
+          }
+        }
+      }
+    ],
+    "totalScanned": 1,
+    "retrievedCount": 1,
+    "confidenceState": "HIGH_CONFIDENCE",
+    "latencyMs": 3.17
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 3.2,
+    "failureReason": null
+  }
+}

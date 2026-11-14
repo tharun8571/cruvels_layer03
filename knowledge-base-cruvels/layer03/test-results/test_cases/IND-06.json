@@ -1,0 +1,69 @@
+{
+  "input": {
+    "testId": "IND-06",
+    "category": "INDIRECT",
+    "query": "statutory penal provision for cheating and dishonestly inducing delivery of property",
+    "expected": {
+      "expectMatch": true,
+      "expectedSection": "318",
+      "expectedActKeywords": [
+        "Nyaya",
+        "Sanhita"
+      ],
+      "expectedConfidence": "HIGH_CONFIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "statutory penal provision for cheating and dishonestly inducing delivery of property",
+    "items": [
+      {
+        "chunkId": "chunk_prov_inst_629cbb1438251939_318",
+        "documentId": "prov_inst_629cbb1438251939_318",
+        "sourceId": "src_cruvels_statutes",
+        "documentTitle": "Bharatiya Nyaya Sanhita, 2023 (2023)",
+        "title": "Cheating",
+        "section": "318",
+        "citation": "Bharatiya Nyaya Sanhita, 2023, Section 318",
+        "structuralUnit": "SECTION",
+        "page": 1,
+        "content": "(1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat.\n(2) Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+        "score": 1,
+        "authorityLevel": "OFFICIAL_PRIMARY",
+        "authorityWeight": 2,
+        "retrievalMethod": "EXACT_STRUCTURAL_INDEX",
+        "textHash": "3d14dbddf9d481f58a3db85bba53120efb1174d4deaef303f7d8668efb84a4cd",
+        "isOperativeClause": true,
+        "inForce": true,
+        "metadata": {
+          "actTitle": "Bharatiya Nyaya Sanhita, 2023",
+          "actNumber": null,
+          "chapter": null,
+          "jurisdiction": "central",
+          "isOverruled": false,
+          "goodLaw": true,
+          "isOperativeClause": true,
+          "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/20062",
+          "sourceChunkId": null,
+          "canonicalHash": "3d14dbddf9d481f58a3db85bba53120efb1174d4deaef303f7d8668efb84a4cd",
+          "contentHash": "3d14dbddf9d481f58a3db85bba53120efb1174d4deaef303f7d8668efb84a4cd",
+          "sourceMetadata": {
+            "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/20062",
+            "canonicalSource": "https://www.indiacode.nic.in/handle/123456789/20062",
+            "chunkId": null,
+            "canonicalHash": "3d14dbddf9d481f58a3db85bba53120efb1174d4deaef303f7d8668efb84a4cd",
+            "contentHash": "3d14dbddf9d481f58a3db85bba53120efb1174d4deaef303f7d8668efb84a4cd"
+          }
+        }
+      }
+    ],
+    "totalScanned": 1,
+    "retrievedCount": 1,
+    "confidenceState": "HIGH_CONFIDENCE",
+    "latencyMs": 3.31
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 3.34,
+    "failureReason": null
+  }
+}

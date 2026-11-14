@@ -1,0 +1,81 @@
+# Knowledge Base Cruvels - Git Ignore Rules
+# Strict exclusion of bulk datasets, binaries, secrets, and caches
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Environment and Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Data directories (Bulk datasets must NEVER be committed to Git)
+data/raw/
+data/staging/
+data/quarantine/
+data/checkpoints/
+data/exports/
+data/reports/
+!data/manifests/
+data/manifests/*.tmp
+*.parquet
+!tests/fixtures/*.parquet
+*.parquet.tmp
+*.jsonl.gz
+*.tar.gz
+*.zip
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.sql.gz
+
+# IDE and OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker
+.docker/
+
+# Generated Documents and PDFs
+*.pdf
+
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.tsbuildinfo
+
+# Temporary Query Dumps and Scratch Scripts in Layer 03
+layer03/*_input.json
+layer03/*_output.json
+layer03/retrieval_*.json
+layer03/sample_test_*.json
+layer03/tests/test-sample-scenario.ts
+
+

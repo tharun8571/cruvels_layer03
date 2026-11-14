@@ -1,0 +1,529 @@
+{
+  "manifest_version": "1.0.0",
+  "upstream_repository": "https://github.com/Vaquill-AI/open-india-law",
+  "upstream_dataset": "https://huggingface.co/datasets/vaquill/open-india-law",
+  "snapshot_version": "v2026.08",
+  "snapshot_commit": "58ea6d8b6859f8039ee68dff5af636f787b02463",
+  "publication_date": "2026-08-26",
+  "licensing": {
+    "application_code": "Apache-2.0",
+    "dataset_compilation": "CC-BY-4.0",
+    "underlying_statutory_text": "Government work under s.17(d) and s.52(1)(q) of Indian Copyright Act 1957"
+  },
+  "summary": {
+    "total_legislation_files": 37,
+    "total_legislation_size_mb": 174.64,
+    "total_legislation_size_gb": 0.17,
+    "total_expected_provisions": 1098577,
+    "total_expected_instruments": 22230,
+    "total_regulation_files": 12,
+    "total_regulation_size_mb": 215.18
+  },
+  "legislation_files": [
+    {
+      "filename": "in_central_legislation.parquet",
+      "jurisdiction": "central",
+      "state_or_ut": null,
+      "record_type": "legislation",
+      "size_mb": 25.29,
+      "expected_rows": 628863,
+      "expected_instruments": 13720,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_central_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_west-bengal_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "west-bengal",
+      "record_type": "legislation",
+      "size_mb": 10.95,
+      "expected_rows": 32238,
+      "expected_instruments": 715,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_west-bengal_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_maharashtra_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "maharashtra",
+      "record_type": "legislation",
+      "size_mb": 8.69,
+      "expected_rows": 30271,
+      "expected_instruments": 379,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_maharashtra_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_karnataka_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "karnataka",
+      "record_type": "legislation",
+      "size_mb": 7.17,
+      "expected_rows": 29485,
+      "expected_instruments": 279,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_karnataka_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_rajasthan_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "rajasthan",
+      "record_type": "legislation",
+      "size_mb": 7.68,
+      "expected_rows": 26759,
+      "expected_instruments": 383,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_rajasthan_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_chhattisgarh_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "chhattisgarh",
+      "record_type": "legislation",
+      "size_mb": 11.88,
+      "expected_rows": 25368,
+      "expected_instruments": 359,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_chhattisgarh_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_chandigarh_legislation.parquet",
+      "jurisdiction": "union_territory",
+      "state_or_ut": "chandigarh",
+      "record_type": "legislation",
+      "size_mb": 7.45,
+      "expected_rows": 21805,
+      "expected_instruments": 256,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_chandigarh_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_kerala_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "kerala",
+      "record_type": "legislation",
+      "size_mb": 5.71,
+      "expected_rows": 19164,
+      "expected_instruments": 322,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_kerala_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_punjab_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "punjab",
+      "record_type": "legislation",
+      "size_mb": 6.41,
+      "expected_rows": 18037,
+      "expected_instruments": 303,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_punjab_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_madhya-pradesh_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "madhya-pradesh",
+      "record_type": "legislation",
+      "size_mb": 6.61,
+      "expected_rows": 17477,
+      "expected_instruments": 216,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_madhya-pradesh_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_telangana_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "telangana",
+      "record_type": "legislation",
+      "size_mb": 3.92,
+      "expected_rows": 16785,
+      "expected_instruments": 259,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_telangana_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_dadra-nagar-haveli_legislation.parquet",
+      "jurisdiction": "union_territory",
+      "state_or_ut": "dadra-nagar-haveli",
+      "record_type": "legislation",
+      "size_mb": 4.85,
+      "expected_rows": 15619,
+      "expected_instruments": 186,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_dadra-nagar-haveli_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_tamil-nadu_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "tamil-nadu",
+      "record_type": "legislation",
+      "size_mb": 5.11,
+      "expected_rows": 15524,
+      "expected_instruments": 308,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_tamil-nadu_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_goa_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "goa",
+      "record_type": "legislation",
+      "size_mb": 3.91,
+      "expected_rows": 14539,
+      "expected_instruments": 212,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_goa_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_uttar-pradesh_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "uttar-pradesh",
+      "record_type": "legislation",
+      "size_mb": 3.98,
+      "expected_rows": 14308,
+      "expected_instruments": 338,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_uttar-pradesh_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_gujarat_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "gujarat",
+      "record_type": "legislation",
+      "size_mb": 4.17,
+      "expected_rows": 12868,
+      "expected_instruments": 226,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_gujarat_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_assam_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "assam",
+      "record_type": "legislation",
+      "size_mb": 4.82,
+      "expected_rows": 12429,
+      "expected_instruments": 987,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_assam_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_andhra-pradesh_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "andhra-pradesh",
+      "record_type": "legislation",
+      "size_mb": 2.67,
+      "expected_rows": 12264,
+      "expected_instruments": 189,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_andhra-pradesh_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_haryana_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "haryana",
+      "record_type": "legislation",
+      "size_mb": 4.16,
+      "expected_rows": 11787,
+      "expected_instruments": 204,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_haryana_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_odisha_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "odisha",
+      "record_type": "legislation",
+      "size_mb": 3.93,
+      "expected_rows": 11370,
+      "expected_instruments": 282,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_odisha_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_bihar_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "bihar",
+      "record_type": "legislation",
+      "size_mb": 3.69,
+      "expected_rows": 10910,
+      "expected_instruments": 298,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_bihar_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_jharkhand_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "jharkhand",
+      "record_type": "legislation",
+      "size_mb": 4.06,
+      "expected_rows": 10831,
+      "expected_instruments": 194,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_jharkhand_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_himachal-pradesh_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "himachal-pradesh",
+      "record_type": "legislation",
+      "size_mb": 2.67,
+      "expected_rows": 10765,
+      "expected_instruments": 178,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_himachal-pradesh_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_uttarakhand_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "uttarakhand",
+      "record_type": "legislation",
+      "size_mb": 3.86,
+      "expected_rows": 10531,
+      "expected_instruments": 244,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_uttarakhand_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_jammu-kashmir_legislation.parquet",
+      "jurisdiction": "union_territory",
+      "state_or_ut": "jammu-kashmir",
+      "record_type": "legislation",
+      "size_mb": 2.08,
+      "expected_rows": 9223,
+      "expected_instruments": 156,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_jammu-kashmir_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_tripura_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "tripura",
+      "record_type": "legislation",
+      "size_mb": 2.57,
+      "expected_rows": 8070,
+      "expected_instruments": 142,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_tripura_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_delhi_legislation.parquet",
+      "jurisdiction": "union_territory",
+      "state_or_ut": "delhi",
+      "record_type": "legislation",
+      "size_mb": 2.88,
+      "expected_rows": 8006,
+      "expected_instruments": 164,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_delhi_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_puducherry_legislation.parquet",
+      "jurisdiction": "union_territory",
+      "state_or_ut": "puducherry",
+      "record_type": "legislation",
+      "size_mb": 1.74,
+      "expected_rows": 7117,
+      "expected_instruments": 118,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_puducherry_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_arunachal-pradesh_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "arunachal-pradesh",
+      "record_type": "legislation",
+      "size_mb": 2.11,
+      "expected_rows": 6996,
+      "expected_instruments": 112,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_arunachal-pradesh_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_meghalaya_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "meghalaya",
+      "record_type": "legislation",
+      "size_mb": 1.12,
+      "expected_rows": 5550,
+      "expected_instruments": 96,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_meghalaya_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_nagaland_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "nagaland",
+      "record_type": "legislation",
+      "size_mb": 1.61,
+      "expected_rows": 4861,
+      "expected_instruments": 84,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_nagaland_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_andaman-nicobar_legislation.parquet",
+      "jurisdiction": "union_territory",
+      "state_or_ut": "andaman-nicobar",
+      "record_type": "legislation",
+      "size_mb": 1.5,
+      "expected_rows": 4626,
+      "expected_instruments": 72,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_andaman-nicobar_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_manipur_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "manipur",
+      "record_type": "legislation",
+      "size_mb": 1.92,
+      "expected_rows": 4560,
+      "expected_instruments": 81,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_manipur_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_sikkim_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "sikkim",
+      "record_type": "legislation",
+      "size_mb": 2.13,
+      "expected_rows": 4266,
+      "expected_instruments": 76,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_sikkim_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_ladakh_legislation.parquet",
+      "jurisdiction": "union_territory",
+      "state_or_ut": "ladakh",
+      "record_type": "legislation",
+      "size_mb": 0.67,
+      "expected_rows": 3119,
+      "expected_instruments": 42,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_ladakh_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_mizoram_legislation.parquet",
+      "jurisdiction": "state",
+      "state_or_ut": "mizoram",
+      "record_type": "legislation",
+      "size_mb": 0.59,
+      "expected_rows": 2015,
+      "expected_instruments": 38,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_mizoram_legislation.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_lakshadweep_legislation.parquet",
+      "jurisdiction": "union_territory",
+      "state_or_ut": "lakshadweep",
+      "record_type": "legislation",
+      "size_mb": 0.08,
+      "expected_rows": 171,
+      "expected_instruments": 12,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_lakshadweep_legislation.parquet",
+      "license": "CC-BY-4.0"
+    }
+  ],
+  "regulation_files": [
+    {
+      "filename": "in_cbic_regulations.parquet",
+      "agency": "CBIC",
+      "record_type": "regulation",
+      "size_mb": 1.38,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_cbic_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_cpcb_regulations.parquet",
+      "agency": "CPCB",
+      "record_type": "regulation",
+      "size_mb": 4.37,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_cpcb_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_dfs_regulations.parquet",
+      "agency": "DFS",
+      "record_type": "regulation",
+      "size_mb": 7.87,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_dfs_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_dgft_regulations.parquet",
+      "agency": "DGFT",
+      "record_type": "regulation",
+      "size_mb": 1.28,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_dgft_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_irdai_regulations.parquet",
+      "agency": "IRDAI",
+      "record_type": "regulation",
+      "size_mb": 7.25,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_irdai_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_law-commission_regulations.parquet",
+      "agency": "Law Commission",
+      "record_type": "regulation",
+      "size_mb": 39.19,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_law-commission_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_mca_regulations.parquet",
+      "agency": "MCA",
+      "record_type": "regulation",
+      "size_mb": 17.86,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_mca_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_moefcc_regulations.parquet",
+      "agency": "MOEFCC",
+      "record_type": "regulation",
+      "size_mb": 38.23,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_moefcc_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_rbi_regulations.parquet",
+      "agency": "RBI",
+      "record_type": "regulation",
+      "size_mb": 44.27,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_rbi_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_sebi_regulations.parquet",
+      "agency": "SEBI",
+      "record_type": "regulation",
+      "size_mb": 31.83,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_sebi_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_state-gst_regulations.parquet",
+      "agency": "State GST",
+      "record_type": "regulation",
+      "size_mb": 13.32,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_state-gst_regulations.parquet",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "filename": "in_trai_regulations.parquet",
+      "agency": "TRAI",
+      "record_type": "regulation",
+      "size_mb": 8.33,
+      "download_url": "https://huggingface.co/datasets/vaquill/open-india-law/resolve/main/in_trai_regulations.parquet",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}

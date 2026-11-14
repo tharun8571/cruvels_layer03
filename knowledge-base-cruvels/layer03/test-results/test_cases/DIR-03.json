@@ -1,0 +1,69 @@
+{
+  "input": {
+    "testId": "DIR-03",
+    "category": "DIRECT",
+    "query": "Section 35 of Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "expected": {
+      "expectMatch": true,
+      "expectedSection": "35",
+      "expectedActKeywords": [
+        "Nagarik",
+        "Suraksha"
+      ],
+      "expectedConfidence": "HIGH_CONFIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "Section 35 of Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "items": [
+      {
+        "chunkId": "chunk_prov_inst_3745fc1edaa28662_35",
+        "documentId": "prov_inst_3745fc1edaa28662_35",
+        "sourceId": "src_cruvels_statutes",
+        "documentTitle": "Bharatiya Nagarik Suraksha Sanhita, 2023 (2023)",
+        "title": "When police may arrest without warrant",
+        "section": "35",
+        "citation": "Bharatiya Nagarik Suraksha Sanhita, 2023, Section 35",
+        "structuralUnit": "SECTION",
+        "page": 1,
+        "content": "(1) Any police officer may without an order from a Magistrate and without a warrant, arrest any person who commits, in the presence of a police officer, a cognizable offence; or against whom a reasonable complaint has been made, or credible information has been received, or a reasonable suspicion exists that he has committed a cognizable offence punishable with imprisonment for a term which may be less than seven years or which may extend to seven years.",
+        "score": 1,
+        "authorityLevel": "OFFICIAL_PRIMARY",
+        "authorityWeight": 2,
+        "retrievalMethod": "EXACT_STRUCTURAL_INDEX",
+        "textHash": "7355950a410fc223f767e936585db6c8c010d87c6d4a47faa48c3fcb497329ae",
+        "isOperativeClause": true,
+        "inForce": true,
+        "metadata": {
+          "actTitle": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "actNumber": null,
+          "chapter": null,
+          "jurisdiction": "central",
+          "isOverruled": false,
+          "goodLaw": true,
+          "isOperativeClause": true,
+          "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/20063",
+          "sourceChunkId": null,
+          "canonicalHash": "7355950a410fc223f767e936585db6c8c010d87c6d4a47faa48c3fcb497329ae",
+          "contentHash": "7355950a410fc223f767e936585db6c8c010d87c6d4a47faa48c3fcb497329ae",
+          "sourceMetadata": {
+            "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/20063",
+            "canonicalSource": "https://www.indiacode.nic.in/handle/123456789/20063",
+            "chunkId": null,
+            "canonicalHash": "7355950a410fc223f767e936585db6c8c010d87c6d4a47faa48c3fcb497329ae",
+            "contentHash": "7355950a410fc223f767e936585db6c8c010d87c6d4a47faa48c3fcb497329ae"
+          }
+        }
+      }
+    ],
+    "totalScanned": 1,
+    "retrievedCount": 1,
+    "confidenceState": "HIGH_CONFIDENCE",
+    "latencyMs": 7.61
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 7.64,
+    "failureReason": null
+  }
+}

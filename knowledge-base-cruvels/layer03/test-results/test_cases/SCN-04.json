@@ -1,0 +1,68 @@
+{
+  "input": {
+    "testId": "SCN-04",
+    "category": "SCENARIO",
+    "query": "A joint venture partner discovers that the co-venturer is actively attempting to sell off underlying machinery before the arbitral tribunal is formally constituted. The claimant files an urgent application before the High Court seeking interim injunction and preservation of assets. What statutory provision applies?",
+    "expected": {
+      "expectMatch": true,
+      "expectedSection": "9",
+      "expectedActKeywords": [
+        "Arbitration"
+      ],
+      "expectedConfidence": "HIGH_CONFIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "A joint venture partner discovers that the co-venturer is actively attempting to sell off underlying machinery before the arbitral tribunal is formally constituted. The claimant files an urgent application before the High Court seeking interim injunction and preservation of assets. What statutory provision applies?",
+    "items": [
+      {
+        "chunkId": "chunk_prov_inst_01d2952d_9",
+        "documentId": "prov_inst_01d2952d_9",
+        "sourceId": "src_cruvels_statutes",
+        "documentTitle": "The Arbitration and Conciliation Act, 1996 (1996)",
+        "title": "Interim measures, etc., by Court",
+        "section": "9",
+        "citation": "The Arbitration and Conciliation Act, 1996, Section 9",
+        "structuralUnit": "SECTION",
+        "page": 1,
+        "content": "(1) A party may, before or during arbitral proceedings or at any time after the making of the arbitral award but before it is enforced in accordance with section 36, apply to a court for an interim measure of protection in respect of any of the following matters, namely preservation, interim custody or sale of any goods which are the subject-matter of the arbitration agreement.",
+        "score": 1,
+        "authorityLevel": "OFFICIAL_PRIMARY",
+        "authorityWeight": 2,
+        "retrievalMethod": "EXACT_STRUCTURAL_INDEX",
+        "textHash": "9e69c80e8cc94d3dbb72bd882a34d7175f169900d25f60550059b5ba8043d0b8",
+        "isOperativeClause": true,
+        "inForce": true,
+        "metadata": {
+          "actTitle": "The Arbitration and Conciliation Act, 1996",
+          "actNumber": null,
+          "chapter": null,
+          "jurisdiction": "central",
+          "isOverruled": false,
+          "goodLaw": true,
+          "isOperativeClause": true,
+          "sourceUrl": null,
+          "sourceChunkId": null,
+          "canonicalHash": "9e69c80e8cc94d3dbb72bd882a34d7175f169900d25f60550059b5ba8043d0b8",
+          "contentHash": "9e69c80e8cc94d3dbb72bd882a34d7175f169900d25f60550059b5ba8043d0b8",
+          "sourceMetadata": {
+            "sourceUrl": null,
+            "canonicalSource": null,
+            "chunkId": null,
+            "canonicalHash": "9e69c80e8cc94d3dbb72bd882a34d7175f169900d25f60550059b5ba8043d0b8",
+            "contentHash": "9e69c80e8cc94d3dbb72bd882a34d7175f169900d25f60550059b5ba8043d0b8"
+          }
+        }
+      }
+    ],
+    "totalScanned": 1,
+    "retrievedCount": 1,
+    "confidenceState": "HIGH_CONFIDENCE",
+    "latencyMs": 3.28
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 3.34,
+    "failureReason": null
+  }
+}

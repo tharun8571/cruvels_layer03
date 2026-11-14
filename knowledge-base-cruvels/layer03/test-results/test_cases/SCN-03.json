@@ -1,0 +1,252 @@
+{
+  "input": {
+    "testId": "SCN-03",
+    "category": "SCENARIO",
+    "query": "A person accused of a cognizable offence carrying up to 3 years imprisonment is threatened with immediate custodial arrest without a magistrate warrant. The police officer has not recorded reasons in writing. What statutory section governs police arrest powers?",
+    "expected": {
+      "expectMatch": true,
+      "expectedSection": "35",
+      "expectedActKeywords": [
+        "Nagarik",
+        "Suraksha"
+      ],
+      "expectedConfidence": "HIGH_CONFIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "A person accused of a cognizable offence carrying up to 3 years imprisonment is threatened with immediate custodial arrest without a magistrate warrant. The police officer has not recorded reasons in writing. What statutory section governs police arrest powers?",
+    "items": [
+      {
+        "chunkId": "chunk_prov_inst_3745fc1edaa28662_35",
+        "documentId": "prov_inst_3745fc1edaa28662_35",
+        "sourceId": "src_cruvels_statutes",
+        "documentTitle": "Bharatiya Nagarik Suraksha Sanhita, 2023 (2023)",
+        "title": "When police may arrest without warrant",
+        "section": "35",
+        "citation": "Bharatiya Nagarik Suraksha Sanhita, 2023, Section 35",
+        "structuralUnit": "SECTION",
+        "page": 1,
+        "content": "(1) Any police officer may without an order from a Magistrate and without a warrant, arrest any person who commits, in the presence of a police officer, a cognizable offence; or against whom a reasonable complaint has been made, or credible information has been received, or a reasonable suspicion exists that he has committed a cognizable offence punishable with imprisonment for a term which may be less than seven years or which may extend to seven years.",
+        "score": 0.385,
+        "authorityLevel": "OFFICIAL_PRIMARY",
+        "authorityWeight": 2,
+        "retrievalMethod": "DYNAMIC_CONCEPTUAL_STATUTORY_INDEX",
+        "textHash": "7355950a410fc223f767e936585db6c8c010d87c6d4a47faa48c3fcb497329ae",
+        "isOperativeClause": true,
+        "inForce": true,
+        "metadata": {
+          "actTitle": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "actNumber": null,
+          "chapter": null,
+          "jurisdiction": "central",
+          "isOverruled": false,
+          "goodLaw": true,
+          "isOperativeClause": true,
+          "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/20063",
+          "sourceChunkId": null,
+          "canonicalHash": "7355950a410fc223f767e936585db6c8c010d87c6d4a47faa48c3fcb497329ae",
+          "contentHash": "7355950a410fc223f767e936585db6c8c010d87c6d4a47faa48c3fcb497329ae",
+          "sourceMetadata": {
+            "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/20063",
+            "canonicalSource": "https://www.indiacode.nic.in/handle/123456789/20063",
+            "chunkId": null,
+            "canonicalHash": "7355950a410fc223f767e936585db6c8c010d87c6d4a47faa48c3fcb497329ae",
+            "contentHash": "7355950a410fc223f767e936585db6c8c010d87c6d4a47faa48c3fcb497329ae"
+          }
+        },
+        "rerankScore": 0.385,
+        "finalScore": 0.385,
+        "scoreBreakdown": {
+          "exactPhrase": 0,
+          "versionBoost": 0.02,
+          "operativeBoost": 0.08
+        },
+        "rank": 1
+      },
+      {
+        "chunkId": "chunk_prov_enr_inst_27f_438",
+        "documentId": "prov_enr_inst_27f_438",
+        "sourceId": "src_cruvels_statutes",
+        "documentTitle": "The Code of Criminal Procedure, 1973 (1973)",
+        "title": "Direction for grant of bail to person apprehending arrest (Anticipatory Bail)",
+        "section": "438",
+        "citation": "The Code of Criminal Procedure, 1973, Section 438",
+        "structuralUnit": "SECTION",
+        "page": 1,
+        "content": "(1) Where any person has reason to believe that he may be arrested on accusation of having committed a non-bailable offence, he may apply to the High Court or the Court of Session for a direction under this section that in the event of such arrest he shall be released on bail; and that Court may, after taking into consideration, inter alia, the following factors, namely:-\n(i) the nature and gravity of the accusation;\n(ii) the antecedents of the applicant including the fact as to whether he has previously undergone imprisonment on conviction by a Court in respect of any cognizable offence;\n(iii) the possibility of the applicant to flee from justice; and\n(iv) where the accusation has been made with the object of injuring or humiliating the applicant by having him so arrested,\neither reject the application forthwith or issue an interim order for the grant of anticipatory bail.\n(2) When the High Court or the Court of Session makes a direction under sub-section (1), it may include such conditions in such directions in the light of the facts of the particular case, as it may think fit, including-\n(i) a condition that the person shall make himself available for interrogation by a police officer as and when required;\n(ii) a condition that the person shall not, directly or indirectly, make any inducement, threat or promise to any person acquainted with the facts of the case so as to dissuade him from disclosing such facts to the Court or to any police officer;\n(iii) a condition that the person shall not leave India without the previous permission of the Court.",
+        "score": 0.385,
+        "authorityLevel": "OFFICIAL_PRIMARY",
+        "authorityWeight": 2,
+        "retrievalMethod": "DYNAMIC_CONCEPTUAL_STATUTORY_INDEX",
+        "textHash": "5524deb300ada7ead6b8dd5676a3f270b11132e7e9b5793be4448db9144bc69a",
+        "isOperativeClause": true,
+        "inForce": true,
+        "metadata": {
+          "actTitle": "The Code of Criminal Procedure, 1973",
+          "actNumber": null,
+          "chapter": "CHAPTER XXXIII - PROVISIONS AS TO BAIL AND BONDS",
+          "jurisdiction": "central",
+          "isOverruled": false,
+          "goodLaw": true,
+          "isOperativeClause": true,
+          "sourceUrl": null,
+          "sourceChunkId": "inst_27f074cead932c11_438",
+          "canonicalHash": "5524deb300ada7ead6b8dd5676a3f270b11132e7e9b5793be4448db9144bc69a",
+          "contentHash": "5524deb300ada7ead6b8dd5676a3f270b11132e7e9b5793be4448db9144bc69a",
+          "sourceMetadata": {
+            "sourceUrl": null,
+            "canonicalSource": null,
+            "chunkId": "inst_27f074cead932c11_438",
+            "canonicalHash": "5524deb300ada7ead6b8dd5676a3f270b11132e7e9b5793be4448db9144bc69a",
+            "contentHash": "5524deb300ada7ead6b8dd5676a3f270b11132e7e9b5793be4448db9144bc69a"
+          }
+        },
+        "rerankScore": 0.385,
+        "finalScore": 0.385,
+        "scoreBreakdown": {
+          "exactPhrase": 0,
+          "versionBoost": 0.02,
+          "operativeBoost": 0.08
+        },
+        "rank": 2
+      },
+      {
+        "chunkId": "chunk_prov_6789e272e7c817b2",
+        "documentId": "prov_6789e272e7c817b2",
+        "sourceId": "src_cruvels_statutes",
+        "documentTitle": "Bharatiya Nagarik Suraksha Sanhita, 2023 (2023)",
+        "title": "Report of police officer on completion of investigation",
+        "section": "193",
+        "citation": "Bharatiya Nagarik Suraksha Sanhita, 2023, Section 193",
+        "structuralUnit": "SECTION",
+        "page": 1,
+        "content": "(1) Every investigation under this Chapter shall be completed without unnecessary delay.\n\n(2) (i) As soon as it is completed, the officer in charge of the police station shall forward to a Magistrate empowered to take cognizance of the offence on a police report, a report in the form prescribed by the State Government, stating-\n(a) the names of the parties;\n(b) the nature of the information;\n(c) the names of the persons who appear to be acquainted with the circumstances of the case;\n(d) whether any offence appears to have been committed and, if so, by whom;\n(e) whether the accused has been arrested;\n(f) whether he has been released on his bond and, if so, whether with or without sureties;\n(g) whether he has been forwarded in custody under section 190;\n(h) whether the report of medical examination of the woman has been attached where investigation relates to an offence under sections 64, 65, 66, 67, 68, 70 or section 71 of the Bharatiya Nyaya Sanhita, 2023;\n(i) the sequence of custody in case of electronic device.\n\n(3) The police officer shall also state whether the accused was arrested during investigation and whether he has been produced before the Magistrate from time to time.",
+        "score": 0.385,
+        "authorityLevel": "OFFICIAL_PRIMARY",
+        "authorityWeight": 2,
+        "retrievalMethod": "DYNAMIC_CONCEPTUAL_STATUTORY_INDEX",
+        "textHash": "99a821ab79d231e6ea2aa8cd2082c673901c8b41dd73c1ebecbc2efee3b1e14d",
+        "isOperativeClause": true,
+        "inForce": true,
+        "metadata": {
+          "actTitle": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "actNumber": null,
+          "chapter": "CHAPTER XII - INFORMATION TO THE POLICE AND THEIR POWERS TO INVESTIGATE",
+          "jurisdiction": "central",
+          "isOverruled": false,
+          "goodLaw": true,
+          "isOperativeClause": true,
+          "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/20063",
+          "sourceChunkId": "bnss_2023_sec_193",
+          "canonicalHash": "99a821ab79d231e6ea2aa8cd2082c673901c8b41dd73c1ebecbc2efee3b1e14d",
+          "contentHash": "99a821ab79d231e6ea2aa8cd2082c673901c8b41dd73c1ebecbc2efee3b1e14d",
+          "sourceMetadata": {
+            "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/20063",
+            "canonicalSource": "https://www.indiacode.nic.in/handle/123456789/20063",
+            "chunkId": "bnss_2023_sec_193",
+            "canonicalHash": "99a821ab79d231e6ea2aa8cd2082c673901c8b41dd73c1ebecbc2efee3b1e14d",
+            "contentHash": "99a821ab79d231e6ea2aa8cd2082c673901c8b41dd73c1ebecbc2efee3b1e14d"
+          }
+        },
+        "rerankScore": 0.385,
+        "finalScore": 0.385,
+        "scoreBreakdown": {
+          "exactPhrase": 0,
+          "versionBoost": 0.02,
+          "operativeBoost": 0.08
+        },
+        "rank": 3
+      },
+      {
+        "chunkId": "chunk_prov_e6c5e22daa743dc8",
+        "documentId": "prov_e6c5e22daa743dc8",
+        "sourceId": "src_cruvels_statutes",
+        "documentTitle": "Bharatiya Nagarik Suraksha Sanhita, 2023 (2023)",
+        "title": "Examination of person accused of rape by medical practitioner",
+        "section": "53A",
+        "citation": "Bharatiya Nagarik Suraksha Sanhita, 2023, Section 53A",
+        "structuralUnit": "SECTION",
+        "page": 1,
+        "content": "(1) When a person is arrested on a charge of committing an offence of rape or an attempt to commit rape and there are reasonable grounds for believing that an examination of his person will afford evidence as to the commission of such offence, it shall be lawful for a registered medical practitioner employed in a hospital run by the Government or by a local authority and in the absence of such a practitioner within the radius of sixteen kilometres from the place where the offence has been committed, by any other registered medical practitioner, acting at the request of any police officer, and for any person acting in good faith in his aid and under his direction, to make such an examination of the arrested person and to use such force as is reasonably necessary for that purpose.\n\n(2) The registered medical practitioner conducting such examination shall, without delay, examine such person and prepare a report of his examination giving the following particulars, namely:-\n(i) the name and address of the accused and of the person by whom he was brought;\n(ii) the age of the accused;\n(iii) marks of injury, if any, on the person of the accused;\n(iv) the description of material taken from the person of the accused for DNA profiling; and\n(v) other reasonable particulars in reasonable detail.",
+        "score": 0.385,
+        "authorityLevel": "OFFICIAL_PRIMARY",
+        "authorityWeight": 2,
+        "retrievalMethod": "DYNAMIC_CONCEPTUAL_STATUTORY_INDEX",
+        "textHash": "b8e78426e7ebe4affa04da867e024c35d66db7cf08d85690b093fdd093d97fb1",
+        "isOperativeClause": true,
+        "inForce": true,
+        "metadata": {
+          "actTitle": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+          "actNumber": null,
+          "chapter": "CHAPTER V - ARREST OF PERSONS",
+          "jurisdiction": "central",
+          "isOverruled": false,
+          "goodLaw": true,
+          "isOperativeClause": true,
+          "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/20063",
+          "sourceChunkId": "bnss_2023_sec_53A",
+          "canonicalHash": "b8e78426e7ebe4affa04da867e024c35d66db7cf08d85690b093fdd093d97fb1",
+          "contentHash": "b8e78426e7ebe4affa04da867e024c35d66db7cf08d85690b093fdd093d97fb1",
+          "sourceMetadata": {
+            "sourceUrl": "https://www.indiacode.nic.in/handle/123456789/20063",
+            "canonicalSource": "https://www.indiacode.nic.in/handle/123456789/20063",
+            "chunkId": "bnss_2023_sec_53A",
+            "canonicalHash": "b8e78426e7ebe4affa04da867e024c35d66db7cf08d85690b093fdd093d97fb1",
+            "contentHash": "b8e78426e7ebe4affa04da867e024c35d66db7cf08d85690b093fdd093d97fb1"
+          }
+        },
+        "rerankScore": 0.385,
+        "finalScore": 0.385,
+        "scoreBreakdown": {
+          "exactPhrase": 0,
+          "versionBoost": 0.02,
+          "operativeBoost": 0.08
+        },
+        "rank": 4
+      },
+      {
+        "chunkId": "jdg_jdg_arnesh_kumar_2014",
+        "documentId": "jdg_arnesh_kumar_2014",
+        "sourceId": "src_cruvels_judgments",
+        "documentTitle": "Arnesh Kumar v. State of Bihar and Anr.",
+        "citation": "(2014) 8 SCC 273",
+        "structuralUnit": "PARAGRAPH",
+        "page": 1,
+        "content": "[ACTIVE PRECEDENT - GOOD LAW]\nCase: Arnesh Kumar v. State of Bihar and Anr.\nCitation: (2014) 8 SCC 273\nCourt: Supreme Court of India\nStatus: GOOD LAW\n\nRatio Decidendi:\nPolice officers shall not automatically arrest accused persons in offences punishable with imprisonment up to 7 years. Mandatory compliance with Section 41 and 41A CrPC (now BNSS Sec 35) is required, including serving notice of appearance and recording reasons for arrest. Magistrates must not authorize detention mechanically.\n\nSummary: Issued mandatory 8-point arrest checklist and prohibited automatic arrests for offences punishable up to 7 years, safeguarding Section 41/41A CrPC (BNSS Sec 35).\n\nArrest brings humiliation, curtails freedom and casts scars forever. Law has laid down conditions under Section 41 CrPC which must be strictly satisfied before depriving a citizen of his liberty.",
+        "score": 0.34,
+        "authorityLevel": "COURT_DECISION",
+        "authorityWeight": 1.25,
+        "retrievalMethod": "CASE_LAW_PRECEDENT_GRAPH",
+        "textHash": "fae8689a0bd102d04675f651452e5eb0ff12610b5c4f51706523f013493866b4",
+        "isOperativeClause": true,
+        "metadata": {
+          "court": "Supreme Court of India",
+          "citation": "(2014) 8 SCC 273",
+          "decisionDate": "2014-07-02",
+          "isOverruled": false,
+          "goodLaw": true,
+          "sectionsCited": "[\"Section 41 CrPC\", \"Section 41A CrPC\", \"Section 498A IPC\", \"Section 35 BNSS\", \"Section 85 BNS\"]",
+          "overruledBy": null,
+          "overrulingReason": null
+        },
+        "rerankScore": 0.34,
+        "finalScore": 0.34,
+        "scoreBreakdown": {
+          "exactPhrase": 0,
+          "versionBoost": 0.02,
+          "operativeBoost": 0.08
+        },
+        "rank": 5
+      }
+    ],
+    "totalScanned": 10,
+    "retrievedCount": 5,
+    "confidenceState": "MEDIUM_CONFIDENCE",
+    "latencyMs": 27.84
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 27.87,
+    "failureReason": null
+  }
+}

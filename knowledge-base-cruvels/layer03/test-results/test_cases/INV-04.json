@@ -1,0 +1,24 @@
+{
+  "input": {
+    "testId": "INV-04",
+    "category": "INVALID_SECTION",
+    "query": "Section 55555 of the Transfer of Property Act, 1882",
+    "expected": {
+      "expectMatch": false,
+      "expectedConfidence": "NO_RELEVANT_EVIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "Section 55555 of the Transfer of Property Act, 1882",
+    "items": [],
+    "totalScanned": 0,
+    "retrievedCount": 0,
+    "confidenceState": "NO_RELEVANT_EVIDENCE",
+    "latencyMs": 2.96
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 2.98,
+    "failureReason": null
+  }
+}

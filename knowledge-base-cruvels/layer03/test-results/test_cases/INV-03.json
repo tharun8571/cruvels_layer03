@@ -1,0 +1,24 @@
+{
+  "input": {
+    "testId": "INV-03",
+    "category": "INVALID_SECTION",
+    "query": "Section 77777 of the Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "expected": {
+      "expectMatch": false,
+      "expectedConfidence": "NO_RELEVANT_EVIDENCE"
+    }
+  },
+  "actualOutput": {
+    "query": "Section 77777 of the Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "items": [],
+    "totalScanned": 0,
+    "retrievedCount": 0,
+    "confidenceState": "NO_RELEVANT_EVIDENCE",
+    "latencyMs": 6.17
+  },
+  "evaluation": {
+    "passed": true,
+    "latencyMs": 6.21,
+    "failureReason": null
+  }
+}
