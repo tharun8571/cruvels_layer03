@@ -59,11 +59,11 @@
     "totalScanned": 1,
     "retrievedCount": 1,
     "confidenceState": "HIGH_CONFIDENCE",
-    "latencyMs": 3.31
+    "latencyMs": 3.2
   },
   "evaluation": {
     "passed": true,
-    "latencyMs": 3.34,
+    "latencyMs": 3.24,
     "failureReason": null
   }
 }

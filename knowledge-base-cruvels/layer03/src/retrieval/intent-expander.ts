@@ -34,7 +34,7 @@ export const LEGAL_INTENT_KNOWLEDGE_BASE: LegalIntentMapping[] = [
   {
     domain: "Contract & Commercial Law",
     doctrine: "Restraint of Trade / Negative Covenant (Post-Employment)",
-    pattern: /\b(?:non-?compete|competing\s+business|competing\s+firm|competitor|restrict(?:s|ing|ion|ive)?\s+.*?(?:working|joining|departure|employment)|prevent(?:s|ing)?\s+.*?(?:working|joining|competitor)|restraint\s+of\s+trade|negative\s+covenant|after\s+departure|after\s+termination)\b/i,
+    pattern: /\b(?:non-?compete|competing\s+(?:business|firm|employers?)|competitors?|restrain(?:s|ing|t|ed)?\s+.*?(?:working|joining|departure|employment|business|trade|leaving)|restrict(?:s|ing|ion|ive)?\s+.*?(?:working|joining|departure|employment|competitors?)|prevent(?:s|ing)?\s+.*?(?:working|joining|competitors?)|restraint\s+of\s+trade|negative\s+covenant|after\s+(?:departure|termination|leaving|resignation)|restrains?\s+(?:an?\s+)?(?:employee|person))\b/i,
     targetActs: [
       "The Indian Contract Act, 1872",
       "Indian Contract Act, 1872",

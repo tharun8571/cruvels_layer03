@@ -14,11 +14,11 @@
     "totalScanned": 0,
     "retrievedCount": 0,
     "confidenceState": "NO_RELEVANT_EVIDENCE",
-    "latencyMs": 2.95
+    "latencyMs": 3.18
   },
   "evaluation": {
     "passed": true,
-    "latencyMs": 2.97,
+    "latencyMs": 3.2,
     "failureReason": null
   }
 }

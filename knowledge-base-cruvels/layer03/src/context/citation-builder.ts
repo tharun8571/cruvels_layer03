@@ -44,7 +44,7 @@ export class CitationBuilderService {
       formattedCitation,
       contentHash: chunk.contentHash,
       isScanned: (chunk.ocrConfidence !== undefined && chunk.ocrConfidence < 0.8),
-      ocrQualityWarning: chunk.ocrQualityWarning,
+      ocrQualityWarning: chunk.ocrQualityWarning || (chunk.ocrConfidence !== undefined && chunk.ocrConfidence < 0.8),
     };
   }
 

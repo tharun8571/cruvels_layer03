@@ -14,12 +14,12 @@ import { SectionDetectorService } from "./section-detector";
 @Injectable()
 export class DocumentStructureDetectorService {
   constructor(
-    private readonly articleDetector: ArticleDetectorService,
-    private readonly sectionDetector: SectionDetectorService,
-    private readonly clauseDetector: ClauseDetectorService,
-    private readonly scheduleDetector: ScheduleDetectorService,
-    private readonly annexureDetector: AnnexureDetectorService,
-    private readonly tableParser: TableParserService,
+    private readonly articleDetector: ArticleDetectorService = new ArticleDetectorService(),
+    private readonly sectionDetector: SectionDetectorService = new SectionDetectorService(),
+    private readonly clauseDetector: ClauseDetectorService = new ClauseDetectorService(),
+    private readonly scheduleDetector: ScheduleDetectorService = new ScheduleDetectorService(),
+    private readonly annexureDetector: AnnexureDetectorService = new AnnexureDetectorService(),
+    private readonly tableParser: TableParserService = new TableParserService(),
   ) {}
 
   /**

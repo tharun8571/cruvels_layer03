@@ -27,7 +27,7 @@
         "structuralUnit": "SECTION",
         "page": 1,
         "content": "(1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat.\n(2) Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
-        "score": 0.4,
+        "score": 0.9,
         "authorityLevel": "OFFICIAL_PRIMARY",
         "authorityWeight": 2,
         "retrievalMethod": "EXACT_STRUCTURAL_INDEX",
@@ -54,8 +54,8 @@
             "contentHash": "3d14dbddf9d481f58a3db85bba53120efb1174d4deaef303f7d8668efb84a4cd"
           }
         },
-        "rerankScore": 0.4,
-        "finalScore": 0.4,
+        "rerankScore": 0.9,
+        "finalScore": 0.9,
         "scoreBreakdown": {
           "exactPhrase": 0,
           "versionBoost": 0.02,
@@ -72,7 +72,7 @@
         "structuralUnit": "SECTION",
         "page": 1,
         "content": "Section 420 of Indian Penal Code, 1860 (Cheating and dishonestly inducing delivery of property) is repealed and replaced by Section 318 of Bharatiya Nyaya Sanhita, 2023.\n[Statutory Concordance: Section 420, Indian Penal Code, 1860 -> Section 318, Bharatiya Nyaya Sanhita, 2023]",
-        "score": 0.4,
+        "score": 0.9,
         "authorityLevel": "OFFICIAL_PRIMARY",
         "authorityWeight": 1.35,
         "retrievalMethod": "EXACT_CONCORDANCE_GRAPH",
@@ -84,8 +84,8 @@
           "goodLaw": true,
           "transition": true
         },
-        "rerankScore": 0.4,
-        "finalScore": 0.4,
+        "rerankScore": 0.9,
+        "finalScore": 0.9,
         "scoreBreakdown": {
           "exactPhrase": 0,
           "versionBoost": 0.02,
@@ -96,12 +96,12 @@
     ],
     "totalScanned": 1,
     "retrievedCount": 2,
-    "confidenceState": "LOW_CONFIDENCE",
-    "latencyMs": 8.47
+    "confidenceState": "HIGH_CONFIDENCE",
+    "latencyMs": 6.14
   },
   "evaluation": {
     "passed": true,
-    "latencyMs": 8.5,
+    "latencyMs": 6.16,
     "failureReason": null
   }
 }

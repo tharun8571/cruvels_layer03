@@ -126,7 +126,7 @@ export class LegalStructureChunkerService {
             isOperativeClause,
             isTable,
             ocrConfidence: page.ocrConfidence,
-            ocrQualityWarning: page.ocrQualityWarning,
+            ocrQualityWarning: page.ocrQualityWarning || (page.ocrConfidence !== undefined && page.ocrConfidence < 0.8),
             metadata: {
               page: page.pageNumber,
               section: effectiveSection,
@@ -180,7 +180,7 @@ export class LegalStructureChunkerService {
               isOperativeClause,
               isTable,
               ocrConfidence: page.ocrConfidence,
-              ocrQualityWarning: page.ocrQualityWarning,
+              ocrQualityWarning: page.ocrQualityWarning || (page.ocrConfidence !== undefined && page.ocrConfidence < 0.8),
               metadata: {
                 page: page.pageNumber,
                 section: effectiveSection,

@@ -109,12 +109,20 @@ export class LegalRerankerService {
 
       // 5. Composite Final Score
       const baseScore = item.fusedScore ?? item.finalScore ?? item.score ?? 0.5;
+      const isExactMatch =
+        item.retrievalMethod === "EXACT_STRUCTURAL_INDEX" ||
+        item.retrievalMethod === "EXACT_CONCORDANCE_GRAPH" ||
+        item.retrievalMethod === "EXACT_LANDMARK_PRECEDENT_INDEX" ||
+        item.authorityLevel === "OFFICIAL_PRIMARY";
+
+      const baseWeight = isExactMatch ? 0.80 : 0.30;
+
       const composite = Math.min(
         1.0,
         Math.max(
           0.05,
           Math.round(
-            (baseScore * 0.30 +
+            (baseScore * baseWeight +
               intentRelevanceScore +
               subQuestionBoost +
               versionBoost +

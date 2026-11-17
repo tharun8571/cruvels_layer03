@@ -85,7 +85,7 @@ export class OcrEngineService {
       confidence = Math.max(0.4, 0.95 - (nonAsciiCount / (text.length || 1)) * 2);
     }
 
-    const isLowQuality = confidence < 0.70;
+    const isLowQuality = confidence < 0.80;
     const processingTimeMs = Math.round((performance.now() - pStart) * 100) / 100;
 
     return {

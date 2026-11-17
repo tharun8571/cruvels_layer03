@@ -9,7 +9,7 @@ export interface OcrQualityAssessment {
   issuesDetected: string[];
 }
 
-export const OCR_CONFIDENCE_THRESHOLD = 0.70;
+export const OCR_CONFIDENCE_THRESHOLD = 0.80;
 
 @Injectable()
 export class OcrQualityService {
