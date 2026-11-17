@@ -1,4 +1,5 @@
 import { Injectable, Logger } from "@nestjs/common";
+import zlib from "node:zlib";
 import type { ExtractedPageData } from "../knowledge-intelligence.types";
 import { TableParserService } from "./table-parser";
 import { TextParserService } from "./text-parser";
@@ -10,6 +11,42 @@ export interface ParsedPdfDocument {
   isScanned: boolean;
   ocrConfidence?: number;
   metadata?: Record<string, unknown>;
+}
+
+function decodePdfAscii85(str: string): Buffer {
+  let cleaned = str.replace(/\s/g, "");
+  if (cleaned.startsWith("<~")) cleaned = cleaned.slice(2);
+  const endIdx = cleaned.indexOf("~>");
+  if (endIdx !== -1) cleaned = cleaned.slice(0, endIdx);
+
+  const out: number[] = [];
+  let tuple = 0;
+  let count = 0;
+
+  for (let i = 0; i < cleaned.length; i++) {
+    const c = cleaned.charCodeAt(i);
+    if (c === 122 && count === 0) {
+      out.push(0, 0, 0, 0);
+      continue;
+    }
+    if (c < 33 || c > 117) continue;
+    tuple = tuple * 85 + (c - 33);
+    count++;
+    if (count === 5) {
+      out.push((tuple >>> 24) & 255, (tuple >>> 16) & 255, (tuple >>> 8) & 255, tuple & 255);
+      tuple = 0;
+      count = 0;
+    }
+  }
+
+  if (count > 0) {
+    for (let j = count; j < 5; j++) tuple = tuple * 85 + 84;
+    for (let j = 0; j < count - 1; j++) {
+      out.push((tuple >>> (24 - j * 8)) & 255);
+    }
+  }
+
+  return Buffer.from(out);
 }
 
 @Injectable()
@@ -109,14 +146,101 @@ export class PdfParserService {
   }
 
   private parseRawPdfBuffer(buffer: Buffer): ParsedPdfDocument {
-    // Extract textual characters from stream objects
     const rawString = buffer.toString("latin1");
-    // Extract BT ... ET text blocks if present
+    const streamRegex = /\bstream[\r\n]+/g;
+    let match: RegExpExecArray | null;
+    const pageTexts: string[] = [];
+
+    while ((match = streamRegex.exec(rawString)) !== null) {
+      const streamStart = match.index + match[0].length;
+      const streamEnd = rawString.indexOf("endstream", streamStart);
+      if (streamEnd === -1) continue;
+
+      const streamData = rawString.slice(streamStart, streamEnd);
+      const dictBefore = rawString.slice(Math.max(0, match.index - 250), match.index);
+
+      let decompressed: Buffer | null = null;
+      if (dictBefore.includes("/ASCII85Decode")) {
+        const decodedA85 = decodePdfAscii85(streamData);
+        try {
+          decompressed = zlib.inflateSync(decodedA85);
+        } catch {
+          try {
+            decompressed = zlib.inflateRawSync(decodedA85);
+          } catch {
+            decompressed = decodedA85;
+          }
+        }
+      } else if (dictBefore.includes("/FlateDecode")) {
+        const rawBuf = Buffer.from(streamData, "latin1");
+        try {
+          decompressed = zlib.inflateSync(rawBuf);
+        } catch {
+          try {
+            decompressed = zlib.inflateRawSync(rawBuf);
+          } catch {
+            decompressed = rawBuf;
+          }
+        }
+      } else {
+        decompressed = Buffer.from(streamData, "latin1");
+      }
+
+      if (decompressed) {
+        const text = decompressed.toString("latin1");
+        const lines: string[] = [];
+        const tjRegex = /(?:\(((?:[^()\\]|\\.)*)\)\s*Tj|\[(.*?)\]\s*TJ)/g;
+        let tm: RegExpExecArray | null;
+        while ((tm = tjRegex.exec(text)) !== null) {
+          if (tm[1] !== undefined) {
+            lines.push(tm[1].replace(/\\([()\\])/g, "$1"));
+          } else if (tm[2]) {
+            const parts = tm[2].match(/\(((?:[^()\\]|\\.)*)\)/g);
+            if (parts) {
+              lines.push(parts.map((p) => p.slice(1, -1).replace(/\\([()\\])/g, "$1")).join(""));
+            }
+          }
+        }
+
+        if (lines.length > 5) {
+          pageTexts.push(lines.join("\n"));
+        }
+      }
+    }
+
+    if (pageTexts.length > 0) {
+      const pages: ExtractedPageData[] = pageTexts.map((txt, idx) => {
+        const pageNum = idx + 1;
+        const clean = this.textParser.normalize(txt);
+        const tables = this.tableParser.extractTables(clean, pageNum);
+        return {
+          pageNumber: pageNum,
+          text: clean,
+          characterCount: clean.length,
+          tokenCount: Math.ceil(clean.length / 4),
+          isScanned: false,
+          ocrConfidence: 1.0,
+          ocrQualityWarning: false,
+          tables,
+        };
+      });
+
+      const fullText = pages.map((p) => p.text).join("\n\n");
+      return {
+        pageCount: pages.length,
+        pages,
+        fullText,
+        isScanned: false,
+        ocrConfidence: 1.0,
+      };
+    }
+
+    // Fallback: check uncompressed BT ... ET blocks
     const textBlocks: string[] = [];
     const btRegex = /BT\s*([\s\S]*?)\s*ET/g;
-    let match: RegExpExecArray | null;
-    while ((match = btRegex.exec(rawString)) !== null) {
-      const block = match[1];
+    let btm: RegExpExecArray | null;
+    while ((btm = btRegex.exec(rawString)) !== null) {
+      const block = btm[1];
       const tjMatches = block.match(/\((.*?)\)\s*Tj/g);
       if (tjMatches) {
         const line = tjMatches.map((tj) => tj.replace(/^\(|\)\s*Tj$/g, "")).join(" ");
